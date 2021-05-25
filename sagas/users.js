@@ -3,6 +3,7 @@ import { SET_USERS, GET_USERS, GET_USERS_STARTED, GET_USERS_FAILED, PUT_USER, PO
 import Axios from 'axios';
 
 export const watchGetUsers = function* () {
+  console.log('3');
   yield takeEvery(GET_USERS, workerGetUsers);
 }
 

@@ -13,6 +13,7 @@ class Users extends React.Component {
   }
 
   componentDidMount() {
+    console.log('1');
     this.props.getUsers();
   }
 
@@ -93,6 +94,7 @@ const mapStateTopProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     getUsers: () => {
+      console.log('2');
       dispatch({ type: GET_USERS });
     },
     addUser: (user) => {
