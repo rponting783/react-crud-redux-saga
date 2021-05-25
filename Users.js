@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Axios from 'axios';
-import { connect } from 'react-redux';
+import { connect} from 'react-redux';
 import { GET_USERS, PUT_USER, POST_USER, DELETE_USER, CANCEL_USER_UPDATE, EDIT_USER } from './actions';
 
 class Users extends React.Component {
